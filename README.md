@@ -11,9 +11,9 @@ Prerequisite to run the program -
 3)Create a db called CDAC
 
 4)Create 3 collections - 
-	tweetIdScore - keep classification scores of classified ids
-	tweetIdText - store tweet id and text
-	tweetIdStatus - keep Status of tweets
+	i)tweetIdScore - keep classification scores of classified ids
+	ii)tweetIdText - store tweet id and text
+	iii)tweetIdStatus - keep Status of tweets
 
 	Columns  in collections are - 
 	i)tweetIdText - tweet_id, tweet_text, created_at, geo, entities, extended_entities, retweeted_status
@@ -35,18 +35,18 @@ How to run the program -
 3) Type mongo.
 
 4)Type the following commands - 
-	use CDAC;
-	db.createCollection("tweetIdText");
-	db.createCollection("tweetIdScore");
-	db.createCollection("tweetIdStatus");
-	db.createCollection("twitterKeys");
-	db.tweetIdText.createIndex({"TTL":1},{expireAfterSeconds:0});
-	db.tweetIdScore.createIndex({"TTL":1},{expireAfterSeconds:0});
-	db.tweetIdStatus.createIndex({"TTL":1},{expireAfterSeconds:0});
-	db.twitterKeys.createIndex({"TTL":1},{expireAfterSeconds:0});
+	i)use CDAC;
+	ii)db.createCollection("tweetIdText");
+	iii)db.createCollection("tweetIdScore");
+	iv)db.createCollection("tweetIdStatus");
+	v)db.createCollection("twitterKeys");
+	vi)db.tweetIdText.createIndex({"TTL":1},{expireAfterSeconds:0});
+	vii)db.tweetIdScore.createIndex({"TTL":1},{expireAfterSeconds:0});
+	viii)db.tweetIdStatus.createIndex({"TTL":1},{expireAfterSeconds:0});
+	ix)db.twitterKeys.createIndex({"TTL":1},{expireAfterSeconds:0});
 
 
-5)Exit the mongo shell by typing ctrl+d.
+5)Exit the mongo shell by typing "ctrl+d" .
 
 6) Go to initTrainer Directory and run initTrainer.py to initiallty train the model. Make sure the models are created in the models folder.
 
