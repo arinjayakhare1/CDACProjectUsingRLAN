@@ -57,4 +57,4 @@ How to run the program -
 
 
 
-The functions are quite straightforward. In case of any queries, I can be contacted at 9971273053 or arinjayakhare1@gmail.com
+The functions are quite straightforward. In case of any queries, I can be contacted at arinjayakhare1@gmail.com
